@@ -1,0 +1,165 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+
+.T{
+    font-size: 30px;
+    font-weight: 700 ;
+    color: orange;
+}
+.ravel{
+    font-size: 30px;
+    font-weight: 700;
+}
+#navbarSupportedContent{
+    margin-left: 360px;
+    font-size: 18px;
+    font-weight: 600;
+}
+  .nav-item .a:hover{
+  color: rgb(250, 101, 101) !important;
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: aquamarine;
+  }
+  .d-flex{
+    margin-right: 10px;
+  }
+  .bgnav{
+    background-image: linear-gradient(grey,white);
+  }
+/* main content start */
+
+.home{
+    width: 100%;
+    height:90vh;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url(../images/background\ img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.home .content{
+  text-align: center;
+  padding-top:150px ;
+}
+.home .content h5{
+    text-align: center;
+    align-content: center;
+    font-size: 40px;
+    color: whitesmoke;
+    font-weight: 700;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 2px 3px 3px black;
+}
+.home .content h1{
+  font-size: 80px;
+  color: white;
+  font-weight: 700;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-shadow: 2px 3px 3px black;
+} 
+.home .content p{
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+}
+ .changecontent::after{
+  content: " ";
+  font-size: 80px;
+  color:red;
+  text-shadow: 1px 2px 2px black;
+  animation: changename 5s infinite linear;
+}
+@keyframes changename{
+  0%{content:"India";
+  }
+  10%{
+    content: "Africa";
+  }
+  20%{
+    content: "America";
+
+  }
+  30%{
+    content: "Japan";
+    color: blue;
+    
+  }
+  40%{
+    content: "Spain";
+
+  }
+  50%{
+    content: "Australia";
+  
+  }
+  60%{
+    content: "New York";
+    color: yellow;
+  }
+  70%{
+    content: "New Zealand";
+  
+  }
+ 80%{
+    content: "Germany";
+   
+  }
+  90%{
+    content: "singapore";
+  }
+  100%{
+    content: "China";
+   
+  }
+}
+@media (max-width:850px){
+  .home{
+      background-position: 50%;
+  }
+  .home .content h5{
+    font-size: 35px;
+}
+.home .content h1{
+    font-size: 50px;
+}
+.home .content p{
+    font-size: 10px;
+}
+.changecontent::after{
+  font-size: 40px;
+}
+}
+@media (max-width:450px){
+  .home .content h5{
+      font-size: 25px;
+  }
+  .home .content h1{
+      font-size: 38px;
+  }
+  .home .content p{
+      font-size: 10px;
+  }
+ .changecontent::after{
+    font-size: 40px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* main content end */
